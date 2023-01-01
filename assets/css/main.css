@@ -1,0 +1,121 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.payment {
+    height: 100vh;
+    background-color: rgb(90, 6, 158);
+    position: relative;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding: 100px 0;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn {
+    display: block;
+    padding: 30px 50px;
+    background-color: rgb(255, 136, 0);
+    font-size: 30px;
+    color: #fff;
+    border: 2px solid rgb(206, 110, 0);
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.form-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s ease;
+}
+.form-wrapper.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 420px;
+    max-width: 340px;
+    background-color: rgb(90, 6, 158);
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0; 
+    margin: auto;
+}
+
+.clBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+}
+.clBtn:hover {
+    cursor: pointer;
+}
+
+
+.input {
+    margin-bottom: 30px;
+    width: 200px;
+    padding: 10px 5px;
+    background-color: rgb(120, 45, 182);
+    border: 2px solid rgba(255, 255, 255, 0.479);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.input.error {
+    border: 2px solid rgb(182, 31, 31);
+    box-shadow: 0px 0px 10px red;
+}
+
+.input::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn_submit {
+   font-size: 15px;
+   padding: 8px 20px;
+   background-color: rgb(255, 136, 0);
+   border: 2px solid rgb(206, 110, 0);
+   border-radius: 5px;
+   color: #fff;
+}
+
+.errorMessage {
+    font-size: 20px;
+    color: red;
+    margin-top: 20px;
+}
